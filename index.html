@@ -1,47 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymNerd</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="vasco">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="#secao-personagens">Personagens</a></li>
+      </ul>
+    </nav>
 
-<head>
-    <title>Meu primeiro site!</title>
-</head>
+    <h1 class="titulo-principal">GymNerd</h1>
+    <p class="secundario">CONSTRUA O CORPO QUE VOCÊ SEMPRE QUIS</p>
 
-<body>
-
-    <h1>Organização Pessoal</h1>
-    <hr>
-    <p>Preciso desenvolver:</p>
-
-    <ul>
-        <li>JavaScript</li>
-        <li>CSS</li>
-        <li>HTML</li>
-    </ul>
-
-    <h2>Objetivo</h2>
-    <p>Quero construir um site que seja:</p>
-    <ul>
-        <li>Bacana</li>
-        <li>Funcional</li>
-        <li>Que cumpra requisitos</li>
-    </ul>
-    <hr>
-    <h2>O que procuro?</h2>
-    <p>Meu foco atual é evolução contínua.</p>
-    <ul>
-        <li>Desenvolver o meu conhecimento</li>
-        <li>Aprender cada vez mais com os meus erros</li>
-        <li>Usar da minha motivação e criatividade para transcrever aquilo que seja funcional</li>
+    <section class="intro-section">
+      <p>Bem-vindo ao <strong>GymNerd</strong>, seu guia de treino inspirado nos personagens mais poderosos do universo anime. Aprenda os segredos de treino de cada personagem e transforme seu físico.</p>
+    </section>
+       
+</section>
+    <div id="resultado-display" style="margin-top: 20px; font-size: 20px; color: #ff1a1a; font-family: 'Oswald';">
+    </div>
+    <section id="secao-personagens">
+      <h2 class="titulo-sessao">Personagens em Foco</h2>
+      
+      <div class="cards">
+        <a href="treinos/1.gojo.html" class="card card-gojo" style="--card-index: 1;">
+          <img src="https://i.pinimg.com/1200x/c4/aa/7a/c4aa7aab71616fa8bae037b0c8b88f3e.jpg" alt="Gojo Satoru">
+          <div class="card-info">
+            <h3>Gojo Satoru</h3>
+            <p>Domínio Técnico</p>
+          </div>
+        </a>
+        <a href="treinos/2.maki.html" class="card card-maki" style="--card-index: 2;">
+          <img src="https://i.pinimg.com/736x/fb/af/2c/fbaf2c9e8566e15164c8019b3522214c.jpg" alt="Maki Zenin">
+          <div class="card-info">
+            <h3>Maki Zenin</h3>
+            <p>Peso/Força</p>
+          </div>
+        </a>
+        <a href="treinos/3.itadori.html" class="card card-itadori" style="--card-index: 3;">
+          <img src="https://i.pinimg.com/736x/5b/ff/9a/5bff9a099d8ec9b99771aaa3db0ef3cc.jpg" alt="Yuji Itadori">
+          <div class="card-info">
+            <h3>Yuji Itadori</h3>
+            <p>Atlético</p>
+          </div>
+        </a>
+        <a href="treinos/4.toji.html" class="card card-toji" style="--card-index: 4;">
+          <img src="https://i.pinimg.com/736x/0f/49/26/0f4926a032ce74360026981af2619ceb.jpg" alt="Toji Fushiguro">
+          <div class="card-info">
+            <h3>Toji Fushiguro</h3>
+            <p>Densidade</p>
+          </div>
+        </a>
+      </div>
+  
+    <footer class="rodape-principal">
+      <div>
+        <div class="rodape-section">
+          <h3>PERSONAGENS</h3>
+          <ul>
+            <li><a href="treinos/1.gojo.html">Gojo Satoru</a></li>
+            <li><a href="treinos/2.maki.html">Maki Zenin</a></li>
+            <li><a href="treinos/3.itadori.html">Yuji Itadori</a></li>
+            <li><a href="treinos/4.toji.html">Toji Fushiguro</a></li>
+          </ul>
+          
+        </div>
         
-    </ul>
-
-    
-
-    <a href="https://github.com/luizricardo-engsoft" target="_blank">
-    Acessar meu GitHub
-        <hr>
-</a>
-    <img src="https://github.blog/wp-content/uploads/2025/04/darklight.png?fit=1600%2C750" alt="Imagem de Exemplo" width="600">
-
-</body>
-
+        <div class="rodape-section">
+          <h3>NAVEGAÇÃO</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="#secao-personagens">Personagens</a></li>
+          </ul>
+        </div>
+        <div class="rodape-section">
+          <h3>SOBRE</h3>
+          <ul>
+            <li><a href="sobre.html">O Projeto</a></li>
+            <li><a href="sobre.html#objetivo">Objetivos</a></li>
+            <li><a href="sobre.html#tecnologias">Tecnologias</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="rodape-bottom">
+  <p>© 2026 GymNerd - Seu guia de treino temático com anime</p>
+  
+  <div class="disclaimer">
+    <p>Este material tem como intuito fornecer informações de caráter educativo e inspiracional. 
+       Ele <strong>NÃO SUBSTITUI</strong> a orientação, o diagnóstico ou o acompanhamento personalizado 
+       de um profissional de educação física ou médico. A prática de exercícios deve ser feita com supervisão adequada.
+    </p>
+  </div>
+</div>
+    </footer>
+    <script src="calculadoraMacros.js"></script>
+  </body>
 </html>
