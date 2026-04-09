@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, .titulo-principal {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #ccc;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.titulo-principal {
+    font-size: 75px;
+    color: #ff1a1a;
+    margin-top: 30px;
+    text-shadow: 0 0 12px rgba(255, 26, 26, 0.5);
+}
+
+.titulo-sessao {
+    font-size: 45px;
+    color: #ff1a1a;
+    margin-bottom: 20px;
+}
+
+.secundario {
+    color: #aaa;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.intro-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(255, 26, 26, 0.1), rgba(255, 26, 26, 0.05));
+    border-left: 4px solid #ff1a1a;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ddd;
+    animation: slideIn 0.6s ease-out;
+}
+
+.intro-section strong {
+    color: #ff1a1a;
+    font-weight: 700;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav.vasco {
+    background: #111;
+    border-bottom: 2px solid #ff1a1a;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+nav.vasco ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+nav.vasco li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+nav.vasco li:hover {
+    color: #ff1a1a;
+    text-shadow: 0 0 10px #ff1a1a;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.card {
+    width: 280px;
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 2px solid transparent;
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-delay: calc(var(--card-index) * 0.1s);
+    position: relative;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.card-info {
+    padding: 15px;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.card::after {
+    content: "VER TREINO";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.9));
+    color: #fff;
+    padding: 30px 15px 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
+
+.card:hover::after {
+    transform: translateY(0);
+}
+
+.card-gojo {
+    border: 2px solid #7729b3;
+}
+
+.card-gojo:hover {
+    box-shadow: 0 0 20px #a29bfe, 0 0 40px rgba(162, 155, 254, 0.6);
+}
+
+.card-maki {
+    border-color: #2ecc71;
+}
+
+.card-maki:hover {
+    box-shadow: 0 0 25px #2ecc71;
+}
+
+.card-itadori {
+    border-color: #ff4757;
+}
+
+.card-itadori:hover {
+    box-shadow: 0 0 25px #ff4757;
+}
+
+.card-toji {
+    border-color: #3742fa;
+}
+
+.card-toji:hover {
+    box-shadow: 0 0 25px #3742fa;
+}
+
+.rodape-principal {
+    background: #111;
+    border-top: 2px solid #ff1a1a;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.rodape-principal > div {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.rodape-section h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: #ff1a1a;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.rodape-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape-section li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.rodape-section a {
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.rodape-section a:hover {
+    color: #ff1a1a;
+}
+
+.rodape-bottom {
+    display: flex !important;
+    flex-direction: column !important; 
+    align-items: center !important;    
+    text-align: center !important;   
+    gap: 15px;                      
+    padding: 20px 10px;
+    border-top: 1px solid rgba(255, 26, 26, 0.3);
+    width: 100%;                    
+}
+
+.rodape-bottom > p {
+    font-size: 14px !important;
+    color: #999 !important;
+    margin: 0;
+}
+
+.disclaimer {
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+.disclaimer p {
+    font-size: 12px !important;
+    color: #777 !important;
+    line-height: 1.6 !important;
+    margin: 0;
+}
+
+.disclaimer strong {
+    color: #ff1a1a;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .titulo-principal {
+        font-size: 45px;
+    }
+    .titulo-sessao {
+        font-size: 32px;
+    }
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+    .cards {
+        gap: 20px;
+        padding: 20px;
+    }
+    nav.vasco ul {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    nav.vasco li {
+        font-size: 18px;
+    }
+    .secundario {
+        font-size: 24px;
+    }
+    .intro-section {
+        padding: 20px;
+        font-size: 16px;
+        margin: 20px 10px;
+    }
+}
