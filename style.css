@@ -60,7 +60,6 @@ p {
     background: linear-gradient(135deg, rgba(255, 26, 26, 0.1), rgba(255, 26, 26, 0.05));
     border-left: 4px solid #ff1a1a;
     border-radius: 8px;
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 1.8;
     color: #ddd;
@@ -69,26 +68,15 @@ p {
 
 .intro-section strong {
     color: #ff1a1a;
-    font-weight: 700;
 }
 
 @keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 nav.vasco {
-    background: linear-gradient(90deg, 
-        rgba(0, 0, 0, 0.85) 0%, 
-        rgba(26, 4, 4, 0.85) 50%, 
-        rgba(56, 16, 16, 0.85) 100%
-    );
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 0%, rgba(26, 4, 4, 0.85) 50%, rgba(56, 16, 16, 0.85) 100%);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     position: sticky;
@@ -142,14 +130,8 @@ nav.vasco li:hover {
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .card img {
@@ -159,13 +141,9 @@ nav.vasco li:hover {
     transition: 0.5s;
 }
 
-.card-info {
-    padding: 15px;
-}
+.card-info { padding: 15px; }
 
-.card:hover img {
-    transform: scale(1.1);
-}
+.card:hover img { transform: scale(1.1); }
 
 .card:hover {
     transform: translateY(-15px) scale(1.02);
@@ -184,26 +162,20 @@ nav.vasco li:hover {
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 1px;
     text-align: center;
     transform: translateY(100%);
     transition: transform 0.3s ease;
     pointer-events: none;
 }
 
-.card:hover::after {
-    transform: translateY(0);
-}
+.card:hover::after { transform: translateY(0); }
 
 .card-gojo { border: 2px solid #7729b3; }
-.card-gojo:hover { box-shadow: 0 0 20px #a29bfe, 0 0 40px rgba(162, 155, 254, 0.6); }
-
+.card-gojo:hover { box-shadow: 0 0 20px #a29bfe; }
 .card-maki { border-color: #2ecc71; }
 .card-maki:hover { box-shadow: 0 0 25px #2ecc71; }
-
 .card-itadori { border-color: #ff4757; }
 .card-itadori:hover { box-shadow: 0 0 25px #ad2530; }
-
 .card-toji { border-color: #3742fa; }
 .card-toji:hover { box-shadow: 0 0 25px #3742fa; }
 
@@ -214,19 +186,16 @@ nav.vasco li:hover {
     font-family: 'Oswald', sans-serif;
     font-size: 22px;
     font-weight: 700;
-    letter-spacing: 1px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    box-shadow: 0 0 10px #c30f0f;
     display: inline-block;
     margin-top: 20px;
 }
 
 .btn-builds:hover {
     background: #ff1a1a;
-    box-shadow: 0 0 25px #ff1a1a;
     transform: scale(1.08);
 }
 
@@ -257,39 +226,20 @@ nav.vasco li:hover {
 }
 
 .tema-gojo li { border-left-color: #d39bfe; }
-.tema-gojo li:hover { box-shadow: 0 0 10px #a29bfe, 0 0 20px #a29bfe, 0 0 40px rgba(162, 155, 254, 0.5); }
-
 .tema-maki li { border-left-color: #00ff88; }
-.tema-maki li:hover { box-shadow: 0 0 20px rgba(46, 204, 113, 0.7); }
-
 .tema-itadori li { border-left-color: #ff4757; }
-.tema-itadori li:hover { box-shadow: 0 0 20px rgba(255, 71, 87, 0.7); }
-
 .tema-toji li { border-left-color: #001aff; }
-.tema-toji li:hover { box-shadow: 0 0 20px rgba(55, 66, 250, 0.7); }
 
-.tema-maki .titulo-sessao { color: #00ff88; text-shadow: 0 0 10px #00ff88; }
-.tema-maki .titulo-principal { color: #00ff88; text-shadow: 0 0 15px rgba(0, 255, 136, 0.85); }
-.tema-gojo .titulo-principal { color: #c7c2ff; animation: glowPulseGojo 7.55s infinite ease-in-out; }
-.tema-toji .titulo-principal { color: #0d1cff; text-shadow: 0 0 15px rgba(13, 28, 255, 0.85); }
-.tema-gojo .titulo-sessao { color: #c7c2ff; text-shadow: 0 0 10px #a29bfe, 0 0 25px rgba(162, 155, 254, 0.6); animation: glowPulseGojo 10s infinite ease-in-out; }
-.tema-itadori .titulo-sessao { color: #ff4757; text-shadow: 0 0 10px #ff4757; }
-.tema-toji .titulo-sessao { color: #001aff; text-shadow: 0 0 10px #001aff; }
+.tema-maki .titulo-sessao, .tema-maki .titulo-principal { color: #00ff88; }
+.tema-gojo .titulo-principal, .tema-gojo .titulo-sessao { color: #c7c2ff; animation: glowPulseGojo 8s infinite ease-in-out; }
+.tema-itadori .titulo-sessao { color: #ff4757; }
+.tema-toji .titulo-sessao, .tema-toji .titulo-principal { color: #001aff; }
 
 .container-sobre {
     max-width: 900px;
     margin: 60px auto;
     padding: 20px;
     text-align: left;
-}
-
-.sobre-conteudo p {
-    color: #ccc;
-    line-height: 1.6;
-}
-
-.lista-tech li {
-    margin-bottom: 10px;
 }
 
 .rodape-principal {
@@ -307,23 +257,31 @@ nav.vasco li:hover {
     gap: 30px;
 }
 
-.rodape-section h3 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    color: #ff1a1a;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
+.rodape-section h3 { font-size: 16px; color: #ff1a1a; margin-bottom: 15px; }
+.rodape-section ul { list-style: none; padding: 0; }
+.rodape-section li { margin-bottom: 10px; font-size: 14px; }
+.rodape-section a { color: #ccc; transition: 0.3s; }
+.rodape-section a:hover { color: #ff1a1a; }
+
+.rodape-bottom {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    padding: 20px 10px;
+    border-top: 1px solid rgba(255, 26, 26, 0.3);
 }
 
-.rodape-section ul {
-    list-style: none;
-    padding: 0;
+.rodape-bottom > p { font-size: 14px !important; color: #999 !important; margin: 0; }
+.disclaimer p { font-size: 12px !important; color: #777 !important; line-height: 1.6 !important; }
+
+@keyframes glowPulseGojo {
+    0%, 100% { text-shadow: 0 0 5px #a29bfe; }
+    50% { text-shadow: 0 0 20px #a29bfe; }
 }
 
-.rodape-section li {
-    margin-bottom: 10px;
-    font-size: 14px;
+@media (max-width: 768px) {
+    .titulo-principal { font-size: 45px; }
+    .titulo-sessao { font-size: 32px; }
+    .card { width: 100%; max-width: 320px; }
+    nav.vasco ul { gap: 20px; flex-wrap: wrap; }
 }
-
-.rodape-section a {
-    color:
