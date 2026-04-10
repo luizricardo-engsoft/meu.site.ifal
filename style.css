@@ -244,8 +244,8 @@ nav.vasco li:hover {
 
 .tema-maki .titulo-principal,
 .tema-maki .titulo-sessao {
-    color: #2E6F40;
-    animation: glowPulseGreen 5s infinite;
+    color: #00674F;
+    animation: glowPulseGreen 2s infinite;
 }
 
 .tema-toji .titulo-principal,
