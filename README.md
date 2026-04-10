@@ -1,6 +1,6 @@
 # GymNerd 🦾愛 
 
-Projeto de um site temático de musculação inspirado em personagens de anime, desenvolvido para a disciplina de Introdução ao Desenvolvimento Web
+Projeto de um site temático de musculação inspirado em personagens de anime, desenvolvido para a disciplina de Introdução às Tecnologias Web
 
 ## 🚀 Tecnologias Utilizadas
 - HTML5
