@@ -1,4 +1,4 @@
-# GymNerd 🦾🏮
+# GymNerd 🦾愛 
 
 Projeto de um site temático de musculação inspirado em personagens de anime, desenvolvido para a disciplina de [Nome da Disciplina].
 
